@@ -1,5 +1,25 @@
 # FeedGenerator
 
+This project is an attempt to create a fully frontend tool for generating a podcast's feed file easily.
+
+The fully frontend approach is so an user can just runit locally on the browser or open a hosted version and use it for his podcast.
+
+This should be able to fetch a feed from an URL (using corsanywhere to bypass CORS) so anyone can use it to update his file and then upload the new one.
+
+The episode audio URL shall be provided as a plain URL, so it admits any audio wherever is hosted.
+
+It may be paired on the future with a server tool capable of hosting the generated feed, host media files (by itself or on some cloud service) of setting publication time.
+
+## Things to do
+
+* build the form for the podcast data and episodes
+* load feed data into the form
+* generate complete feed with all episodes and make it downloadable
+* be able to add new episodes
+* get audio data from an uploaded audio file
+
+## Angular CLI
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
 ## Development server
