@@ -1,0 +1,57 @@
+<div class="editor-container">
+
+  
+  
+  <mat-form-field>
+    
+    <input matInput [(ngModel)]="podcast.title" placeholder="Podcast title">
+  </mat-form-field>
+  <mat-form-field>
+    
+    <input matInput [(ngModel)]="podcast.link" placeholder="Podcast link">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput [(ngModel)]="podcast.description" placeholder="Podcast description"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select [(ngModel)]="podcast.language" placeholder="Podcast language">
+      <mat-option value="es-ES">Spanish (Spain)</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    
+    <input matInput [(ngModel)]="podcast.copyright" placeholder="Podcast copyright">
+  </mat-form-field>
+  <mat-form-field>
+    
+    <input matInput [(ngModel)]="podcast.subtitle" placeholder="Podcast subtitle">
+  </mat-form-field>
+  <mat-form-field>
+    
+    <input matInput [(ngModel)]="podcast.author" placeholder="Podcast author">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput [(ngModel)]="podcast.summary" placeholder="Podcast Summary"></textarea>
+  </mat-form-field>
+  <div>
+    <mat-checkbox [(ngModel)]="podcast.explicit">Explicit</mat-checkbox>
+  </div>
+  <mat-form-field>
+    
+    <input matInput [(ngModel)]="podcast.owner_name" placeholder="Name of podcast's owner">
+  </mat-form-field>
+  <mat-form-field>
+    
+    <input matInput [(ngModel)]="podcast.owner_email" placeholder="email of podcast's owner">
+  </mat-form-field>
+  <mat-form-field>
+    
+    <input matInput [(ngModel)]="podcast.image" placeholder="Podcast image">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select [(ngModel)]="podcast.category" placeholder="Podcast category" [(value)]="podcast.category">
+      <mat-option *ngFor="let category of categories; let i = index" value="{{category}}">{{category}}</mat-option>
+    </mat-select>      
+    
+  </mat-form-field>
+</div>
